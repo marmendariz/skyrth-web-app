@@ -1,0 +1,63 @@
+#app-footer{
+  height: 100%;
+  background-color: black;
+  color: white;
+  position: relative;
+
+  #grid-wrapper{
+    padding: 10px;
+    margin-bottom: 80px;
+  }
+
+  @mixin titleSpacing(){
+    margin: 10px;
+    padding: 0;
+  }
+
+  h5{
+    @include titleSpacing();
+    text-transform: uppercase;
+  }
+
+  p{
+    margin: 0 10px 10px 10px;
+  }
+
+  hr{
+    padding: 0;
+    margin: 10px 10px;
+
+    border: none;
+    height: 1px;
+    color: white; /*Old browser support*/
+    background-color: white;
+  }
+
+
+  ul,li{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  ul{
+    margin: 0 20px 20px 20px;
+  }
+  li{
+    margin: 10px 0;
+  }
+
+  #copyright{
+    color: black;
+    padding: 3px;
+    background-color: lightgrey;
+    position: relative;
+    p{
+      margin: 10px;
+    }
+  }
+}
+
+#text-highlight{
+  font-weight: bold;
+}
