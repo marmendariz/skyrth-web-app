@@ -6,44 +6,40 @@ class Footer extends React.Component{
   render(){
     return (
       <div id="app-footer">
-        <section id="connection-secton">
-
-        </section>
-
         <Grid id="grid-wrapper" container>
           <Grid item xs={2}></Grid>
           <Grid item xs={2}>
-            <h5>Skyrth, LLC.</h5>
-            <p>"At vero eos et accusamus et iusto odio dignissimos 
+            <h5 id="company-name">Skyrth</h5>
+            {/* <p>"At vero eos et accusamus et iusto odio dignissimos 
               ducimus qui blanditiis praesentium voluptatum deleniti 
               atque corrupti quos dolores et quas molestias excepturi 
-            </p>
+            </p> */}
           </Grid>
           <Grid item xs={2}>
-            <h5>Section Title</h5>
+            <h5 className="footer-section-title">Section Title</h5>
             <ul>
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-              <li>Link 4</li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
             </ul>
           </Grid>
           <Grid item xs={2}>
-            <h5>Section Title</h5>
+            <h5 className="footer-section-title">Section Title</h5>
             <ul>
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-              <li>Link 4</li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
             </ul>
           </Grid>
           <Grid item xs={2}>
-            <h5>Section Title</h5>
+            <h5 className="footer-section-title">Section Title</h5>
             <ul>
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-              <li>Link 4</li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
+              <li><a href="#">Link </a></li>
             </ul>
           </Grid>
           <Grid item xs={2}></Grid>
