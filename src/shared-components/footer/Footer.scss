@@ -1,6 +1,11 @@
+@import '../../index.scss';
+
+//TODO: CLEAN UP
+$lite-font-color: #b0b0b0;
+
 #app-footer{
   height: 100%;
-  background-color: black;
+  background-color: $app-primary-color;
   color: white;
   position: relative;
 
@@ -29,8 +34,8 @@
 
     border: none;
     height: 1px;
-    color: white; /*Old browser support*/
-    background-color: white;
+    color: $lite-font-color; /*Old browser support*/
+    background-color: $lite-font-color;
   }
 
 
@@ -48,16 +53,17 @@
   }
 
   #copyright{
-    color: black;
+    color: $lite-font-color;
     padding: 3px;
-    background-color: lightgrey;
     position: relative;
-    p{
-      margin: 10px;
-    }
+    display: flex;
+    justify-content: space-around;
+    font-size: 10pt;
   }
 }
 
-#text-highlight{
+
+
+.text-highlight{
   font-weight: bold;
 }

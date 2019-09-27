@@ -52,8 +52,10 @@ class Footer extends React.Component{
           </Grid>
           <Grid item xs={2}></Grid>
         </Grid>
+        <hr></hr>
         <section id="copyright">
-          <p>&copy; 2019 Copyright <span id="text-highlight">Skyrth, LLC.</span></p>
+          <p>&copy; 2019 Copyright <span className="text-highlight">Skyrth, LLC.</span></p>
+          <p>Designed By <a className="text-highlight">Mark Armendariz</a></p>
         </section>
       </div>
       );

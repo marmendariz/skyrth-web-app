@@ -1,10 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import NavBar from './shared-components/nav-bar';
+import ButtonAppBar from './shared-components/app-nav-bar';
 import Footer from './shared-components/footer';
 import Paper from '@material-ui/core/Paper';
-
 import Grid from '@material-ui/core/Grid';
 import {makeStyles} from '@material-ui/core/styles';
 
@@ -14,11 +13,11 @@ class App extends React.Component {
       <div id="app">
         <Grid container space={3}>
           <Grid item xs={12}>
-            <NavBar></NavBar>
+            {/* <NavBar></NavBar> */}
+            <ButtonAppBar></ButtonAppBar>
           </Grid>
           <Grid item xs={12}>
             <main id="test">
-              MAIN
             </main>
           </Grid>
           <Grid item xs={12}>
