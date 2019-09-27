@@ -14,7 +14,6 @@ class Footer extends React.Component{
           <Grid item xs={2}></Grid>
           <Grid item xs={2}>
             <h5>Skyrth, LLC.</h5>
-            <hr></hr>
             <p>"At vero eos et accusamus et iusto odio dignissimos 
               ducimus qui blanditiis praesentium voluptatum deleniti 
               atque corrupti quos dolores et quas molestias excepturi 
@@ -22,7 +21,6 @@ class Footer extends React.Component{
           </Grid>
           <Grid item xs={2}>
             <h5>Section Title</h5>
-            <hr></hr>
             <ul>
               <li>Link 1</li>
               <li>Link 2</li>
@@ -32,7 +30,6 @@ class Footer extends React.Component{
           </Grid>
           <Grid item xs={2}>
             <h5>Section Title</h5>
-            <hr></hr>
             <ul>
               <li>Link 1</li>
               <li>Link 2</li>
@@ -42,7 +39,6 @@ class Footer extends React.Component{
           </Grid>
           <Grid item xs={2}>
             <h5>Section Title</h5>
-            <hr></hr>
             <ul>
               <li>Link 1</li>
               <li>Link 2</li>
@@ -52,7 +48,6 @@ class Footer extends React.Component{
           </Grid>
           <Grid item xs={2}></Grid>
         </Grid>
-        <hr></hr>
         <section id="copyright">
           <p>&copy; 2019 Copyright <span className="text-highlight">Skyrth, LLC.</span></p>
           <p>Designed By <a className="text-highlight">Mark Armendariz</a></p>

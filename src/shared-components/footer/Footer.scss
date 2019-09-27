@@ -5,13 +5,17 @@ $lite-font-color: #b0b0b0;
 
 #app-footer{
   height: 100%;
-  background-color: $app-primary-color;
+  // background-color: $app-primary-color;
+  background-color: black;
   color: white;
   position: relative;
-
+  
+  // #grid-wrapper{
+  //   padding: 80px 0;
+  // }
   #grid-wrapper{
-    padding: 10px;
-    margin-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
 
   @mixin titleSpacing(){
@@ -53,6 +57,7 @@ $lite-font-color: #b0b0b0;
   }
 
   #copyright{
+    margin-top: 50px;
     color: $lite-font-color;
     padding: 3px;
     position: relative;
