@@ -6,8 +6,9 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import appStyles from '../../index.scss';
-
+import appStyles from '../../../index.scss';
+import {Link} from 'react-router-dom';
+import "./AppNavBar.scss";
 
 //TODO: Adjust drop-shadow and make it less strong
 const useStyles = makeStyles(theme => ({
@@ -15,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1
   },
   toolbar:{
-    minHeight: 64,
+    // minHeight: 64,
     color: "black"
   },
   menuButton: {
@@ -38,8 +39,8 @@ export default function ButtonAppBar() {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>Skyrth</Typography>
-          <Button color="inherit">Login</Button>
+          <Typography variant="h6" className={classes.title}><Link to="/">Skyrth</Link></Typography>
+          <Button color="inherit"><Link to="/login">Login</Link></Button>
         </Toolbar>
       </AppBar>
     </div>

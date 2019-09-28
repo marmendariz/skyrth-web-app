@@ -1,30 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+/* UI Imports */
 import './App.scss';
-import ButtonAppBar from './shared-components/app-nav-bar';
-import Footer from './shared-components/footer';
-import Paper from '@material-ui/core/Paper';
+import ButtonAppBar from './components/shared/app-nav-bar';
+import AppFooter from './components/shared/app-footer';
 import Grid from '@material-ui/core/Grid';
-import {makeStyles} from '@material-ui/core/styles';
+
+/* View Components */
+import HomeView from './components/views/home-view';
+import LoginView from './components/views/login-view';
 
 class App extends React.Component {
   render() {
     return (
-      <div id="app">
-        <Grid container space={3}>
-          <Grid item xs={12}>
-            {/* <NavBar></NavBar> */}
-            <ButtonAppBar></ButtonAppBar>
+      <Router>
+        <div id="app">
+          <Grid container space={3}>
+            <Grid item xs={12}>
+              {/* <NavBar></NavBar> */}
+              <ButtonAppBar></ButtonAppBar>
+            </Grid>
+            <Grid item xs={12}>
+              <main id="app-content">
+                <Switch>
+                  <Route path='/' exact component={HomeView}></Route>
+                  <Route path='/login' exact component={LoginView}></Route>
+                </Switch>
+              </main>
+            </Grid>
+            <Grid item xs={12}>
+              <AppFooter id="app-footer"></AppFooter>
+            </Grid>
           </Grid>
-          <Grid item xs={12}>
-            <main id="test">
-            </main>
-          </Grid>
-          <Grid item xs={12}>
-            <Footer id="app-footer"></Footer>
-          </Grid>
-        </Grid>
-      </div>
+        </div>
+      </Router>
     );
   }
 }
