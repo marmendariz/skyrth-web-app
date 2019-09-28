@@ -1,16 +1,12 @@
 import React from 'react';
-import {Helmet} from 'react-helmet';
 import './HomeView.scss';
-
-const title = "Home | Skyrth";
+import AppViewTitle from '../../shared/app-view-title';
 
 class HomeView extends React.Component{
   render(){
     return (
     <div>
-      <Helmet>
-        <title>{title}</title>
-      </Helmet>
+      <AppViewTitle>Home</AppViewTitle>
         Home
     </div>);
   }

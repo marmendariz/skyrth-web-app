@@ -1,15 +1,13 @@
 import React from 'react';
 import './LoginView.scss';
 import AppLogin from '../../shared/app-login';
-import Helmet from 'react-helmet';
-
-const loginViewTitle = "Login | Skyrth"
+import AppViewTitle from '../../shared/app-view-title';
 
 class LoginView extends React.Component{
   render(){
     return(
       <div>
-        <Helmet>{loginViewTitle}</Helmet>
+        <AppViewTitle>Login</AppViewTitle>
         Login View
         <AppLogin></AppLogin>
       </div>

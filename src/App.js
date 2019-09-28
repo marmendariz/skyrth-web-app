@@ -16,10 +16,9 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div id="app">
+        <div id="app-wrapper">
           <Grid container space={3}>
             <Grid item xs={12}>
-              {/* <NavBar></NavBar> */}
               <ButtonAppBar></ButtonAppBar>
             </Grid>
             <Grid item xs={12}>

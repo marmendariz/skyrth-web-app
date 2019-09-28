@@ -28,6 +28,8 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+const AppName = process.env.REACT_APP_NAME;
+
 export default function ButtonAppBar() {
   const classes = useStyles();
 
@@ -35,13 +37,19 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       {/* <AppBar position="static" style={{backgroundColor : appStyles.appPrimaryColor}}> */}
       <AppBar position="static" style={{backgroundColor : "white"}}>
+        
         <Toolbar className={classes.toolbar}>
+        
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}><Link to="/">Skyrth</Link></Typography>
-          <Button color="inherit"><Link to="/login">Login</Link></Button>
+        
+          <Typography variant="h6" className={classes.title}><Link to="/">{AppName}</Link></Typography>
+        
+          <Link to="/login"><Button color="inherit">Login</Button></Link>
+        
         </Toolbar>
+
       </AppBar>
     </div>
   );
