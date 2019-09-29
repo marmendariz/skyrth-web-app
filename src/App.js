@@ -11,6 +11,7 @@ import Grid from '@material-ui/core/Grid';
 /* View Components */
 import HomeView from './components/views/home-view';
 import LoginView from './components/views/login-view';
+const DashboardView = () => <h2>Dashboard</h2>;
 
 class App extends React.Component {
   render() {
@@ -26,6 +27,7 @@ class App extends React.Component {
                 <Switch>
                   <Route path='/' exact component={HomeView}></Route>
                   <Route path='/login' exact component={LoginView}></Route>
+                  <Route path='/dashboard' exact component={DashboardView}></Route>
                 </Switch>
               </main>
             </Grid>

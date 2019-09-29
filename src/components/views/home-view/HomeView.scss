@@ -1,0 +1,13 @@
+#home-view{
+
+
+  $carouselHeight : 200px;
+  .carousel{
+    height: $carouselHeight;
+    .carousel-inner{
+      height: $carouselHeight;
+    }
+  }
+
+
+}
