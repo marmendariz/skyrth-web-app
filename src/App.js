@@ -4,9 +4,8 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 /* UI Imports */
 import './App.scss';
-import ButtonAppBar from './components/shared/app-nav-bar';
+import AppNavBar from './components/shared/app-nav-bar';
 import AppFooter from './components/shared/app-footer';
-//import Grid from '@material-ui/core/Grid';
 
 /* View Components */
 import HomeView from './components/views/home-view';
@@ -19,7 +18,7 @@ class App extends React.Component {
       <div id="app-wrapper">
         <div className="row">
           <div id="nav-bar-wrapper" className="col s12">
-            <ButtonAppBar></ButtonAppBar>
+            <AppNavBar></AppNavBar>
           </div>
         </div>
         <div className="row">
@@ -37,11 +36,9 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-        <footer className="row">
-            <div className="col s12">
-              <AppFooter id="app-footer"></AppFooter>
-            </div>
-        </footer>
+        <div id="footer-wrapper">
+          <AppFooter id="app-footer"></AppFooter>
+        </div>
       </div>
     );
   }
