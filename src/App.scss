@@ -1,6 +1,11 @@
 #app-wrapper{
+
+  #nav-bar-wrapper{
+    padding: 0;
+  }
+
   #app-content{
-    padding: 20px;
+    // padding: 20px;
     min-height: 100vh;
   }
 }

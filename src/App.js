@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.scss';
 import ButtonAppBar from './components/shared/app-nav-bar';
 import AppFooter from './components/shared/app-footer';
-import Grid from '@material-ui/core/Grid';
+//import Grid from '@material-ui/core/Grid';
 
 /* View Components */
 import HomeView from './components/views/home-view';
@@ -16,27 +16,33 @@ const DashboardView = () => <h2>Dashboard</h2>;
 class App extends React.Component {
   render() {
     return (
-      <Router>
-        <div id="app-wrapper">
-          <Grid container space={3}>
-            <Grid item xs={12}>
-              <ButtonAppBar></ButtonAppBar>
-            </Grid>
-            <Grid item xs={12}>
-              <main id="app-content">
-                <Switch>
-                  <Route path='/' exact component={HomeView}></Route>
-                  <Route path='/login' exact component={LoginView}></Route>
-                  <Route path='/dashboard' exact component={DashboardView}></Route>
-                </Switch>
-              </main>
-            </Grid>
-            <Grid item xs={12}>
-              <AppFooter id="app-footer"></AppFooter>
-            </Grid>
-          </Grid>
+      <div id="app-wrapper">
+        <div className="row">
+          <div id="nav-bar-wrapper" className="col s12">
+            <ButtonAppBar></ButtonAppBar>
+          </div>
         </div>
-      </Router>
+        <div className="row">
+          <div className="container">
+            <div className="row">
+              <Router>
+                <main className="col s12" id="app-content">
+                  <Switch>
+                    <Route path='/' exact component={HomeView}></Route>
+                    <Route path='/login' exact component={LoginView}></Route>
+                    <Route path='/dashboard' exact component={DashboardView}></Route>
+                  </Switch>
+                </main>
+              </Router>
+            </div>
+          </div>
+        </div>
+        <footer className="row">
+            <div className="col s12">
+              <AppFooter id="app-footer"></AppFooter>
+            </div>
+        </footer>
+      </div>
     );
   }
 }
