@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'materialize-css/dist/css/materialize.min.css';
 import App from './App';
 import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux';
 import './index.scss';
-
 //import reducers
 import reducers from './reducers';
 
